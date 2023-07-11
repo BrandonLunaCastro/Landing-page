@@ -11,25 +11,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body class="body">
-    <header>
-        <nav id="nav-bar">
-         <div class="logo">
-            <i class="fa-solid fa-book fa-2xl"></i>
-            <h2>Book Store</h2>   
-         </div>
-         <div class="links">
-          <a href="#" class="nav-link">Header link one </a>
-          <a href="#" class="nav-link">Header link two </a>
-          <a href="#" class="nav-link">Header link three </a>   
-        </div>
-        </nav>  
-    </header>
     <main id="main">
+        <header>    
+            <div class="logo">
+               <i class="fa-solid fa-book fa-2xl"></i>
+               <h2>Book Store</h2>   
+            </div>
+            <div class="links">
+             <a href="#" class="nav-link">Home </a>
+             <a href="#" class="nav-link">Store</a>
+             <a href="#" class="nav-link">Sign Up</a>   
+           </div>
+       </header>
         <section class="section-1">
             <div>
               <h1>Vendiendo libros desde hace treinta años</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum tempor dolor, ac mollis turpis feugiat aliquam. Aenean tincidunt risus ac erat feugiat hendrerit. Nunc hendrerit ante augue. Cras tempor, lacus vitae rutrum vehicula, nibh est mollis ipsum, eu porta metus nunc ut justo. Aliquam ornare gravida nisi vitae condimentum. Donec ac dictum odio, quis molestie nisl. Etiam non purus lobortis, congue ante sit amet, bibendum dolor. </p>    
+              <form>    
+                <input id="form-button"  type="button" value="Sing up"> 
+              </form>
             </div>
+
             <img id="image-hero"  src="files/books.jpg" alt="imagen de la libreria">    
         
         </section>
@@ -64,15 +66,24 @@
             </div>
         </section>
        <section class="section-4">
-            <form>
-                <h3></h3>
-                <p></p>
-                <input type="button" value="Sing up"> 
+         <div class="container">  
+          <div>  
+            <h3>Hora de tomar accion, suscribete!</h3>
+            <p>Suscribete para recibir mails y enterarte antes que nadie de ofertas y productos</p>
+          </div> 
+            <form>    
+                <input id="form-button"  type="button" value="Sing up"> 
             </form>
-       </section>
+         </div> 
+        </section>
     </main>
     <footer>
-        Copyright 2023 
+        <nav class="nav-footer">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+        </nav>
+        © Copyright 2023, Brandon Luna
     </footer>
 </body>
-</html>
+</html> 

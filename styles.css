@@ -8,8 +8,10 @@
 body{
     height: 100vh;
 }
-
-#nav-bar{
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1000;   
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -17,8 +19,8 @@ body{
     gap: 8px;
     padding: 0 36px;
     height: 70px;
-  
 }
+
 .logo{
     display: inherit;
     align-items: center;
@@ -33,17 +35,24 @@ body{
 }
 .links > a{
     text-decoration: none;
-    color: #171717;
+    color: rgb(27, 27, 27)
 }
 
-/*Main*/
+.links > a:hover{
+    text-decoration: none;
+    color: #050505;
+    font-weight: 700;
+}
+
+
+
 /*section 1*/
 .section-1{
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 0px;
-    padding: 100px;
+    padding: 50px;
     background-color: darkcyan;
   
 }
@@ -130,10 +139,58 @@ body{
     font-size: 1.5rem;
 }
 
+/*seccion-4*/
+
+.section-4{
+    background-color: rgb(200, 251, 251);
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    border-radius: 16px;
+    background-color: darkcyan;
+    color: azure;
+    margin: 40px;
+    padding: 30px;
+    text-align: start;
+    align-items: center;
+    gap: 18px;
+}
+.container > div{
+    display: inherit;
+    flex-direction: column;
+} 
+
+#form-button{
+    background-color: darkcyan;
+    width: 4rem;
+    height: 2rem;
+    color: azure;
+    border: 1px double azure;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 
 footer{
-    background-color: rgb(137, 194, 194);
-    text-align: center;
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 16px;
+    gap: 8px;
+    color: rgb(40, 40, 40);
+    background-color: darkcyan;
+    height: 5rem;
+
+}
+.nav-footer > a{
+    color: rgb(27, 27, 27);
+    font-weight: 600;
+    padding: 0 7px;
+    text-decoration: none;
 }
