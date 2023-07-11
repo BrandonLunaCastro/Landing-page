@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+#nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: darkcyan;
+    gap: 8px;
+    padding: 0 36px;
+    height: 70px;
+  
+}
+.logo{
+    display: inherit;
+    align-items: center;
+    gap: 8px;
+    color: #171717;
+}
+
+.links{ 
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.links > a{
+    text-decoration: none;
+    color: #171717;
+}
+
+/*Main*/
+/*section 1*/
+.section-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 100px;
+    background-color: darkcyan;
+  
+}
+.section-1 > div{
+    margin: 25px;
+    display: flex;
+    flex-direction: column;    
+    gap: 8px;
+    text-align: center;
+}
+
+#image-hero{
+    width: 60%;
+    height: 50%;
+    border-radius: 3px;
+    box-shadow:rgba(0, 0, 0, 0.5);
+}
+
+/*section 2*/
+
+.section-2{
+    background-color: rgb(200, 251, 251);
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cards{
+    padding: 50px 16px;
+    display: inherit;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+.card{
+    background-color: rgba(110, 196, 177, 0.311);
+    overflow: hidden;
+    display: inherit;
+    border-radius: 10px;
+    margin-right: 18px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 200px;
+    height: 250px;
+    box-shadow: 2px 2px 8px 2px rgba(0,0,0, 0.85);
+    transition: all 1s ease;
+}
+.card:hover{
+    transform: scale(1.2);
+}
+
+
+#image-card{
+    width: 100%;
+    height: 70%;
+    border-top: 190px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* section3 */
+
+.section-3{
+    padding: 0;
+    margin: 0;
+}
+
+.imagen-fondo{
+    background-image: url(files/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 40em;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    
+}
+.imagen-fondo > p {
+    color: azure;
+    width: 60%;
+    padding: 32px;
+    font-size: 1.5rem;
+}
+
+
+
+footer{
+    background-color: rgb(137, 194, 194);
+    text-align: center;
+  
+}
